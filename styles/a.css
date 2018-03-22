@@ -1,0 +1,134 @@
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EFEFEF;
+    color: black;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* topNavBar */
+.topNavBar{
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.topNavBar .topNavBar-inner{
+    padding: 0 16px;
+}
+/* nav */
+.topNavBar nav>ul{
+    list-style: none;
+}
+
+.topNavBar nav>ul>li{
+    float: left;
+    margin-right: 17px;
+    margin-left: 17px;
+}
+
+.topNavBar nav>ul>li>a{
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.topNavBar nav>ul>li>a:hover{
+    border-bottom: 3px solid #E8676B;
+}
+
+.topNavBar nav{
+    padding: 4px 0;
+    float: right;
+}
+
+/* logo */
+.topNavBar .logo{
+    float: left;
+    font-size: 24px;
+    font-family: "Arial Black";
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+
+.topNavBar .logo .rs{
+    color: #E8676B;
+    margin-right: 4px;
+}
+
+.topNavBar .logo .card{
+    color: #9A9DA2;
+}
+
+/* bg-img */
+
+.banner {
+    background-image: url(../images/bgi-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 515px;
+}
+
+.banner .mask{
+    height: 515px;
+    background-color: rgba(44, 51, 64, 0.8);
+}
+
+/* card */
+
+.userCard{
+    border: 1px solid red;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+.userCard .picture>img{
+    height: 347px;
+    width: 299px;
+}
+
+.userCard .welcome{
+    background-color: #E6686A;
+    color: #fff;
+    /* width: 70px;
+    height: 29px;
+    display: inline-block;
+    line-height: 29px;
+    text-align: center; */
+     padding: 4px 15px; 
+     line-height: 22px;
+     position: relative;
+}
+
+.userCard .welcome .triangle{
+    width: 0px;
+    border: 10px solid transparent;
+    border-top-width: 0px;
+    border-left-color: #E6686A;
+    position: absolute;
+    top: 100%;
+    left: 4px;
+    display: block;
+}
