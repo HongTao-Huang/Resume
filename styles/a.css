@@ -97,7 +97,6 @@ a{
 /* card */
 
 .userCard{
-    border: 1px solid red;
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
@@ -188,7 +187,6 @@ a{
 }
 
 .userCard .media a{
-    /* border: 1px solid black; */
     display: inline-block;
     border-radius:50%; 
     width: 40px;
