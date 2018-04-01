@@ -79,7 +79,7 @@ header.header{
 }
 
 .banner{
-    background-image: url(../images/bgc.jpg);
+    background-image: url(../images/bgc-min.jpg);
     background-position: center center;
     background-size: cover;
     height: 515px;
@@ -174,7 +174,7 @@ main.main .userCard .footer{
 main.main .userCard .footer a{
     width: 40px;
     line-height: 30px;
-    padding: 5px 0; 
+    padding: 5px 0;
     display: inline-block;
     margin: 20px 32px;
     border-radius: 50%;
