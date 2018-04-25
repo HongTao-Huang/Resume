@@ -27,10 +27,22 @@ body{
     background-color: #efefef;
     color: black;
 }
-
+.header{
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.2s;
+    padding: 20px 0;
+}
 .header .navigation{
     float: right;
     padding: 4px 0;
+}
+
+.header.active{
+    background-color: #fff;
+    color: #3d4451;
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+    padding: 10px 0;
 }
 
 .header .navigation ul>li{
@@ -45,7 +57,7 @@ body{
     padding: 5px 0;
     border-top:3px solid transparent;
     border-bottom:3px solid transparent;
-    color: rgba(255, 255, 255, 0.7);
+    color: inherit;
 }
 
 .header .navigation ul>li>a:hover{
@@ -68,7 +80,7 @@ body{
 }
 
 header.header .navigationBar{
-    padding: 20px 16px;
+    padding: 0 16px;
 }
 
 header.header{
@@ -333,4 +345,54 @@ section.portfolio .works{
 section.portfolio .works .big,
 section.portfolio .works .small{
     position: absolute;
+}
+
+.loading{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.loading::before,.loading::after{
+    content: '';
+    display:block;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: black;
+    border-radius: 50%;
+    animation : load 1.5s linear infinite;
+}
+.loading::after{
+    animation-delay: 0.75s;
+}
+@keyframes load{
+    from{
+        width: 0px;height: 0px;opacity: 1;
+    }
+    to{
+        width: 100px;height: 100px;opacity: 0;
+    }
+}
+
+.upload{
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload.active{
+    display: flex;
 }
